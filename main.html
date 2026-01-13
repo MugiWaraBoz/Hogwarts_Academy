@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hogwarts Academy</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container p-3">
+      <header class="row mx-auto">
+        <nav class="navbar navbar-expand-lg custom-rounded p-1 glass">
+          <div
+            class="container-fluid justify-content-evenly align-items-center"
+          >
+            <img
+              class="img-fluid nav-img"
+              src="images/Hogwarts-Crest.png"
+              alt=""
+            />
+            <button
+              class="navbar-toggler ham-men"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""
+                ><i
+                  class="fa-solid fa-wand-sparkles fa-lg"
+                  style="color: #c9a44c"
+                ></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <form class="d-flex justify-content-center p-3" role="search">
+                    <input
+                      class="form-control me-2 rounded-4"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn text-white" type="submit">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="banner-container container my-4 p-2">
+          <div class="hero position-relative rounded-5 overflow-hidden">
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide position-relative"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner rounded-5 overflow-hidden">
+                <div class="carousel-item active">
+                  <img
+                    src="images/Hogwarts.jpg"
+                    class="img-fluid w-100 hero-img"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/Hogwarts-Express.jpg"
+                    class="img-fluid w-100 hero-img"
+                    alt=""
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/HarryHoldingQuidditchCupInACrowd.webp"
+                    class="img-fluid w-100 hero-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- Buttons -->
+              <button
+                class="btn slider-btn z-3"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span class="text-white"><</span>
+              </button>
+              <button
+                class="btn slider-btn z-3"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span class="text-white">></span>
+              </button>
+            </div>
+
+            <div class="hero-text rounded-4 p-4">
+              <h4>Meet all the heroes from the field</h4>
+              <p>
+                Discover legendary moments, unforgettable victories, and the
+                magic behind every triumph.
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="row">
+        <!-- Success rates -->
+        <section></section>
+
+        <!-- Programe section -->
+        <section>
+          <hr class="border-1 opacity-75 rounded-4" />
+          <div class="text-center">
+            <h2 class="fs-1">Programs</h2>
+            <p class="opacity-75 fs-4">Learn and Grow your Magic together</p>
+          </div>
+          <hr class="border-1 opacity-75 rounded-4" />
+          <div class="container row justify-content-evenly">
+            <div class="card col-lg-5 col-sm-12 card-size card-img1">
+              <div class="card-info">
+                <h5 class="card-title">Hogwarts Express</h5>
+                <p class="card-text">
+                  Begin your journey from Platform 9¾ aboard the legendary
+                  Hogwarts Express, where every ride marks the start of a
+                  magical adventure.
+                </p>
+
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card col-lg-5 col-sm-12 card-size card-img2">
+              <div class="card-info">
+                <h5 class="card-title">Learn Magic</h5>
+                <p class="card-text">
+                  Master spells, unlock ancient secrets, and train your magical
+                  abilities step by step at Hogwarts.
+                </p>
+
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+
+            <div class="card col-12 card-size card-img3">
+              <div class="card-info">
+                <h5 class="card-title">Room of Requirement</h5>
+                <p class="card-text">
+                  A hidden chamber that reveals itself at the perfect moment.
+                  Whether you seek knowledge, shelter, or secrets — the room
+                  always provides.
+                </p>
+
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Goodies -->
+        <section class="my-5">
+          <hr class="border-1 opacity-75 rounded-4" />
+
+          <div class="text-center">
+            <h2 class="fs-1">Magical Equipment</h2>
+            <p class="opacity-75 fs-4">
+              Essential magical tools provided to every student upon enrollment
+              at Hogwarts.
+            </p>
+          </div>
+
+          <hr class="border-1 opacity-75 rounded-4" />
+
+          <div class="container row justify-content-evenly">
+            <!-- Elder Wand -->
+            <div class="card mb-3 hogwarts-card" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/Elder wand.jpg"
+                    class="img-fluid rounded-start"
+                    alt="Elder Wand"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">The Elder Wand</h5>
+                    <p class="card-text">
+                      One of the most powerful wands ever created, capable of
+                      extraordinary magic and unmatched strength.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Legendary artifact</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slytherin Robe -->
+            <div class="card mb-3 hogwarts-card" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/Slytherin robe.jpg"
+                    class="img-fluid rounded-start"
+                    alt="Slytherin Robe"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Slytherin Robe</h5>
+                    <p class="card-text">
+                      Dark and elegant robes worn by Slytherin students,
+                      symbolizing ambition, pride, and cunning.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">House uniform</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sword of Gryffindor -->
+            <div class="card mb-3 hogwarts-card" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/Godric Gryffindor Sword.webp"
+                    class="img-fluid rounded-start"
+                    alt="Sword of Gryffindor"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Sword of Gryffindor</h5>
+                    <p class="card-text">
+                      A legendary sword that presents itself only to those who
+                      show true courage and bravery.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Gryffindor relic</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Gryffindor Robe -->
+            <div class="card mb-3 hogwarts-card" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/Griffindores robe.jpg"
+                    class="img-fluid rounded-start"
+                    alt="Gryffindor Robe"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Gryffindor Robe</h5>
+                    <p class="card-text">
+                      Bold crimson robes representing courage, determination,
+                      and the fearless spirit of Gryffindor House.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">House uniform</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Time-Turner -->
+            <div class="card mb-3 hogwarts-card" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/hermione's time chain.png"
+                    class="img-fluid rounded-start"
+                    alt="Time Turner"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Time-Turner</h5>
+                    <p class="card-text">
+                      A rare magical device that allows the wearer to travel
+                      back in time for a short duration.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Restricted magical item</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hufflepuff Robe -->
+            <div class="card mb-3 hogwarts-card" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="images/Hufflepuff robe.webp"
+                    class="img-fluid rounded-start"
+                    alt="Hufflepuff Robe"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Hufflepuff Robe</h5>
+                    <p class="card-text">
+                      Warm and welcoming robes symbolizing loyalty, patience,
+                      and hard work of Hufflepuff House.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">House uniform</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="my-5">
+          <hr class="border-1 opacity-75 rounded-4" />
+          <div class="text-center">
+            <h2 class="fs-1">FAQ</h2>
+          </div>
+          <hr class="border-1 opacity-75 rounded-4" />
+          <div class="container row align-items-center">
+            <div class="col-lg-4 col-sm-12">
+              <img
+                class="img-fluid faq-img"
+                src="images/question mark hogwarts.png"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-8 col-sm-12 mt-3">
+              <div
+                class="accordion accordion-flush hogwarts-accordion"
+                id="accordionFlushExample"
+              >
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      How do I enroll at Hogwarts?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      You must receive an enrollment letter from Hogwarts, which
+                      explains how to get to Platform 9¾ and board the Hogwarts
+                      Express.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      What magical items do students receive?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Students receive essential magical items including wands,
+                      robes, textbooks, and house-specific items like the
+                      Gryffindor sword or Slytherin robe.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      Can non-students visit Hogwarts?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Hogwarts is private and magical. Visitors are generally
+                      not allowed unless accompanied by a student or during
+                      special events.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      What subjects are taught at Hogwarts?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Hogwarts teaches Potions, Defense Against the Dark Arts,
+                      Transfiguration, Charms, Herbology, and Care of Magical
+                      Creatures, among other magical subjects.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      How are students sorted into houses?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Students are sorted into Gryffindor, Hufflepuff,
+                      Ravenclaw, or Slytherin by the Sorting Hat based on
+                      personality, values, and traits.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSix"
+                    >
+                      What happens if magical rules are broken?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Hogwarts enforces rules strictly. Consequences may include
+                      detention, loss of house points, or other disciplinary
+                      measures depending on the severity of the violation.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Admit now -->
+        <section class="my-5">
+          <hr class="border-1 opacity-75 rounded-4" />
+          <div class="text-center">
+            <h2 class="fs-1">Want to start your Magical journey?</h2>
+          </div>
+          <hr class="border-1 opacity-75 rounded-4" />
+          <form action="">
+            <div class="container row">
+              <div class="col-6">
+                <label for="Name" class="form-label">
+                  <h5>Name</h5>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Name"
+                  aria-describedby="NameHelp"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="col-6">
+                <label for="Email" class="form-label">
+                  <h5>Email address</h5>
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="Email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="col-12 my-3">
+                <label for="PhoneNumber" class="form-label">
+                  <h5>Phone Number</h5>
+                </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="PhoneNumber"
+                  placeholder="019-xx-xxx-xxx"
+                />
+              </div>
+              <div class="col-12 my-3">
+                <label for="message" class="form-label">
+                  <h5>Message</h5>
+                </label>
+                <textarea
+                  class="form-control message-box"
+                  aria-label="With textarea"
+                ></textarea>
+              </div>
+              <input
+                class="btn form-button"
+                type="submit"
+                value="Send Message"
+              />
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer
+      class="footer-container d-flex justify-content-center align-items-center"
+    >
+      <div class="container row">
+        <div class="col-6">
+          <div>
+            <h1>Begin Your Admission Today</h1>
+            <p>
+              Step into a world of magic, learning, and endless possibilities at
+              Hogwarts.
+            </p>
+            <input
+              class="btn form-button"
+              type="submit"
+              value="Admission Form"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <ul class="list-group list-group-flush custom-footer-list">
+            <li class="list-group-item">About Hogwarts</li>
+            <li class="list-group-item">Our Houses</li>
+            <li class="list-group-item">Campus Life</li>
+            <li class="list-group-item">School Traditions</li>
+            <li class="list-group-item">Wizarding Education</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+    <script
+      src="https://kit.fontawesome.com/3a97aa5ed7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

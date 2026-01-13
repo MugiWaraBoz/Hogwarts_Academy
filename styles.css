@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+:root {
+  /* Deep midnight blue (castle night sky) */
+  --hogwarts-bg: #0a0f1f;
+
+  /* Antique wizard gold (not too yellow, very classy) */
+  --hogwarts-primary: #c9a44c;
+
+  /* Warm parchment text (easy on eyes) */
+  --hogwarts-text: #e4dcc6;
+
+  /* Dark stone card background */
+  --hogwarts-card: #141a2b;
+}
+
+.medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  /* background-image: url("images/background.jpg"); */
+  background-color: var(--hogwarts-bg);
+  /* margin: 10px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--hogwarts-primary) !important;
+}
+
+hr {
+  color: var(--hogwarts-primary) !important;
+  width: 100vw;
+  justify-self: center;
+}
+
+p {
+  color: var(--hogwarts-text);
+}
+
+/* navbar */
+.nav-img {
+  width: 65px;
+}
+
+.custom-rounded {
+  border-radius: 25px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 0px solid rgba(255, 255, 255, 0.3);
+}
+
+.ham-men {
+  border: 0px solid wheat;
+}
+
+/* banner */
+.banner-container {
+}
+
+.hero-img {
+  width: auto;
+  height: 25rem;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  /* z-index: 0; */
+}
+
+.hero-text {
+  max-width: 420px;
+  background-color: var(--hogwarts-card);
+  border: 1px solid rgba(218, 165, 32, 0.4); /* gold */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.slider-btn {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  opacity: 100%;
+  border-radius: 50px;
+  align-self: center;
+  margin-top: -60px;
+  margin-left: 15px;
+  /* z-index: 1; */
+}
+
+.slider-btn {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Programs */
+.card-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* top: 0px; */
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  height: 450px;
+  border-radius: 25px;
+  /* width: 570px; */
+}
+.card-size {
+  border-radius: 25px;
+  border: 0px;
+  /* width: 570px; */
+  height: 450px;
+  color: white;
+  margin: 10px;
+}
+
+.card-img1 {
+  background-image: url("images/Hogwarts-Express.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.card-img2 {
+  background-image: url("images/learning.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-img3 {
+  background-image: url("images/Room_of_Requirement.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  justify-content: center;
+}
+
+.card-info .btn {
+  background: linear-gradient(145deg, #1b1f2a, #0f1320);
+  border: 1px solid rgba(218, 165, 32, 0.4); /* gold */
+  color: #e8e1c1; /* parchment text */
+}
+
+/* Magical equipement */
+/* Hogwarts themed card */
+.hogwarts-card {
+  background: linear-gradient(145deg, #1b1f2a, #0f1320);
+  border: 1px solid rgba(218, 165, 32, 0.4); /* gold */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  color: #e8e1c1; /* parchment text */
+}
+
+/* Card title */
+.hogwarts-card .card-title {
+  color: #d4af37; /* gold */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Card text */
+.hogwarts-card .card-text {
+  color: #e8e1c1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Small muted text */
+.hogwarts-card small {
+  color: #bfae70 !important;
+}
+
+/* Image fix (blends better) */
+.hogwarts-card img {
+  /* height: 200px; */
+  /* width: auto; */
+  /* object-fit: c; */
+  filter: brightness(0.9);
+}
+
+/* FAQ */
+.faq-img {
+  /* height: 500px; */
+  border-radius: 10px;
+  border: 1px solid var(--hogwarts-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Accordion background & border */
+.hogwarts-accordion .accordion-item {
+  background-color: #121a23; /* dark castle/charcoal */
+  border: 1px solid rgba(212, 175, 55, 0.5); /* subtle gold */
+  border-radius: 8px;
+  margin-bottom: 10px; /* space between items */
+}
+
+/* Button (collapsed & open) */
+.hogwarts-accordion .accordion-button {
+  background-color: #121a23; /* match item bg */
+  color: #e6e1c3; /* parchment text */
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Change color when expanded */
+.hogwarts-accordion .accordion-button:not(.collapsed) {
+  background-color: #1b132b; /* slightly darker on open */
+  color: #d4af37; /* gold for active */
+  box-shadow: inset 0 -1px 0 rgba(218, 165, 32, 0.3);
+}
+
+/* Accordion body */
+.hogwarts-accordion .accordion-body {
+  background-color: #121a23;
+  color: #e6e1c3; /* light parchment */
+  border-top: 1px solid rgba(212, 175, 55, 0.2); /* subtle separator */
+}
+
+/* Hover effect for buttons */
+.hogwarts-accordion .accordion-button:hover {
+  background-color: #1b132b;
+  color: #d4af37;
+}
+
+/* Form */
+.message-box {
+  height: 400px;
+  resize: none;
+}
+
+.form-button {
+  background-color: var(--hogwarts-primary);
+  color: #0b132b;
+  border: none;
+}
+
+.form-button:hover {
+  background-color: #c9a635; /* slightly darker gold */
+}
+
+/* Footer */
+.footer-container {
+  /* width: 100vw; */
+  margin-top: 50px;
+  height: 50vh;
+  background-color: var(--hogwarts-card);
+  color: var(--hogwarts-text);
+  padding-top: 35px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.footer-container h1 {
+  color: var(--hogwarts-primary);
+}
+
+.footer-container p {
+  color: var(--hogwarts-text);
+  opacity: 0.9;
+}
+
+.custom-footer-list {
+  background-color: transparent;
+}
+
+.custom-footer-list .list-group-item {
+  background-color: transparent;
+  color: var(--hogwarts-text);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-footer-list .list-group-item:hover {
+  background-color: rgba(212, 175, 55, 0.08);
+}
+
+@media (min-width: 992px) {
+  /* navbar */
+  .custom-rounded {
+    border-radius: 50px; /* same as rounded-5 */
+  }
+
+  .hero-text {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  /* card */
+  .card-info {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 25px;
+    justify-content: center;
+    height: 200px;
+    /* width: 570px; */
+  }
+
+  .hogwarts-card img {
+    height: 200px;
+    /* width: auto; */
+    /* object-fit: c; */
+    filter: brightness(0.9);
+  }
+
+  /* Footer */
+  .footer-container {
+    /* width: 100vw; */
+    margin-top: 50px;
+    height: 25vh;
+    background-color: var(--hogwarts-card);
+    color: var(--hogwarts-text);
+    padding-top: 35px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+  }
+}
